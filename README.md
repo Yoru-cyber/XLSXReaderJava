@@ -1,6 +1,9 @@
 # XLSX Reader 
 
-This is a personal Java library designed to simplify reading data from `.xlsx` files. This library implements a basic, custom parsing approach without relying on external libraries like Apache POI. Currently, it provides the fundamental functionality: parsing an XLSX file and creating a document object representing its structure.
+This is a personal Java library made from scratch to read data from `.xlsx` files. 
+This library implements a basic, custom parsing approach without relying on external libraries like Apache POI. Currently, 
+it provides the fundamental functionality: parsing an XLSX file and creating a document object representing its structure.
+
 
 ## Features
 
@@ -40,10 +43,18 @@ public class Main {
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         XLSXReader xlsxReader = new XLSXReader(documentBuilder);
-        xlsxReader.GetEntries(xlsxFilePath);
     }
 }
 ```
 ## Notes
 
 * Currently, this is just a hobby project so it's very basic.
+
+## Roadmap
+
+- [x] Set and retrieve sheet.
+- [ ] Set and retrieve document.
+- [x] Get cell value.
+- [ ] Set cell value.
+- [ ] Change sheet's name.
+- [ ] Core tests.

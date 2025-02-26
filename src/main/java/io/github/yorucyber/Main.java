@@ -1,8 +1,6 @@
 package io.github.yorucyber;
 
 import io.github.yorucyber.XLSXReader.XLSXReader;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -19,8 +17,8 @@ public class Main {
         try (ZipFile excelFile = new ZipFile(xlsxFilePath)) {
             XLSXReader xlsxReader = new XLSXReader(documentBuilder, excelFile);
             xlsxReader.SetCurrentSheet("xl/worksheets/sheet1.xml");
-            Element cell = (Element) xlsxReader.GetCell("B1");
-            System.out.println(cell.getTextContent());
+            System.out.println(xlsxReader.GetCell("A1"));
+//            System.out.println(cell.getTextContent());
 //            xlsxReader.createXMLFile();
 
         } catch (IOException | SAXException e) {

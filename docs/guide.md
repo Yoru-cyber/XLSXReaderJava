@@ -1,10 +1,13 @@
-# Madness man
+# Guide
 
-In order to understand some ins and outs of this project, there's some thing that need to be explained.
+This guide explains mainly a little of the `SpreadsheetML` standard
+Because the code can be confusing because of lack of knowledge of the standard.
 
-Like the `SpreadsheetML` standard.
 
 ## Key concepts
+
+> 🤓 An excel file is just a zip file of multiple XML documents.
+
 
 [The standard explained by Microsoft](https://learn.microsoft.com/en-us/office/open-xml/spreadsheet/structure-of-a-spreadsheetml-document?tabs=cs)
 
@@ -36,4 +39,3 @@ Each `cell` contains a `CellValue` element that represents the value of the cell
         </sheetData>
     </worksheet>
 ```
-
